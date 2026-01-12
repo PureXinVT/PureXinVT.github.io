@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>个人网站首页</title>
+
+    <!-- 字体图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <style>
+        /* 全局样式 */
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero 大标题区 */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-image: url("hero-bg.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 20px;
+        }
+
+        /* 主要内容区 */
+        .container {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            width: 260px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .project-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        .project-card h3 {
+            margin: 15px 0;
+            font-size: 20px;
+        }
+        .project-card p {
+            font-size: 14px;
+            padding: 0 10px;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #eee;
+        }
+        .social-icons i {
+            font-size: 22px;
+            margin: 0 10px;
+            color: #eee;
+        }
+        .social-icons i:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>欢迎来到我的个人网站</h2>
+        <nav>
+            <a href="#about">关于我</a>
+            <a href="#projects">作品</a>
+            <a href="#contact">联系我</a>
+        </nav>
+    </header>
+
+    <!-- Hero 区 -->
+    <section class="hero">
+        <h1>你好！我是李鑫宇</h1>
+        <p>网络安全 | 设计爱好者 | 技术分享</p>
+    </section>
+
+    <!-- 关于我 -->
+    <div id="about" class="container">
+        <h2 class="section-title">关于我</h2>
+        <p>这里放你的个人简介，比如教育背景、技术栈、兴趣爱好等。</p>
+    </div>
+
+    <!-- 作品展示 -->
+    <div id="projects" class="container">
+        <h2 class="section-title">我的作品</h2>
+        <div class="projects">
+            <!-- 作品卡片示例 -->
+            <div class="project-card">
+                <img src="project1.png" alt="作品1"/>
+                <h3>项目名称 1</h3>
+                <p>这里是项目简要介绍。</p>
+            </div>
+            <div class="project-card">
+                <img src="project2.png" alt="作品2"/>
+                <h3>项目名称 2</h3>
+                <p>这里是项目简要介绍。</p>
+            </div>
+            <!-- 更多作品 -->
+        </div>
+    </div>
+
+    <!-- 联系方式 -->
+    <div id="contact" class="container">
+        <h2 class="section-title">联系我</h2>
+        <p>你可以通过下面链接找到我：</p>
+        <div class="social-icons">
+            <a href="https://github.com/PureXinVT"><i class="fab fa-github"></i></a>
+            <a href="mailto:purexinvt@gamail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Xinyu Li
+    </footer>
+
+</body>
+</html>
